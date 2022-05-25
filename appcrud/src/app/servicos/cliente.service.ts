@@ -30,4 +30,8 @@ export class ClienteService {
     return this.htpp.post(this.url, cliente);
   }
 
+  update(cliente: Cliente, id: any){
+    return this.htpp.put(this.url+'?id=' + id, cliente);
+  }
+
 }
