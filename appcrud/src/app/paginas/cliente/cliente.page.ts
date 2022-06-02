@@ -11,7 +11,7 @@ import { ModalClientePage } from '../modal-cliente/modal-cliente.page';
 export class ClientePage implements OnInit {
   clientes: Cliente[];
 
-  constructor( private service: ClienteService, private modalCtrl: ModalController) { }
+  constructor( private service: ClienteService, private modalctrl: ModalController) { }
 
   ngOnInit() {
     this.service.getAll().subscribe(resposta => {
