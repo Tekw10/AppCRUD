@@ -11,7 +11,6 @@ import { Produto, ProdutoService } from 'src/app/servicos/produto.service';
 export class ModalProdutoPage implements OnInit {
 
   @Input() p: Produto;
-
   atualizar = false;
 
   dadosProduto= {
