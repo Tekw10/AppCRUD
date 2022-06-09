@@ -28,7 +28,7 @@ export class ClientePage implements OnInit {
   }
 
   novoCliente(){
-    this.modalCtrl.create({
+    this.modalctrl.create({
       component: ModalClientePage
     }).then(modal => {
       modal.present();
@@ -41,7 +41,7 @@ export class ClientePage implements OnInit {
   }
 
   atualizar( c: Cliente){
-    this.modalCtrl.create({
+    this.modalctrl.create({
       component: ModalClientePage,
       componentProps: {c}
     }).then(modal => {
